@@ -1,0 +1,45 @@
+SuevaFree Changelog
+
+- Version 1.2.6.9 - Released: 26.09.2014
+
+-- Added : New default skin.
+
+- Version 1.2.6.8 - Released: 16.05.2014
+
+-- Fixed : Text formatting with the tag more.
+
+- Version 1.2.6.7 - Released: 16.05.2014
+
+-- Added: Display or hide the read more button, from the option panel.
+-- Fixed: Problem with long submenu items
+
+- Version 1.2.6.6 - Released: 25.03.2014
+
+-- Fixed: wrong fonts of some classes
+
+- Version 1.2.6.5 - Released: 05.03.2014
+
+-- Fixed: Compatibility between the tag more and the intro text, generated automatically from Wordpress.
+
+- Version 1.2.6.2 - Released: 17.12.2013
+
+-- Fixed: home and category sidebar were reversed.
+
+- Version 1.2.6 - Released: 28.11.2013
+
+-- Added : Change font size for contents, from option panel.
+
+- Version 1.2.0 - Released: 24.10.2013
+
+-- Added : Post formats
+-- Code Optimized
+
+- Version 1.1.6 - Released: 01.10.2013
+
+-- Added : Blog sidebar for Homepage.
+
+- Version 1.1.5 - Released: 21.09.2013
+
+-- Fixed : Correct view for images with captions for responsive version.
+-- Fixed : Css code optimized.
+-- Fixed : Background colors from option panel.
