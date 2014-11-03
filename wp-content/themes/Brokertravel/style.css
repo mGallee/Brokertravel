@@ -1,0 +1,90 @@
+@charset "utf-8";
+/*
+Theme Name: Brokertravel
+Theme URI: http://wordpress..de
+Description: Tamplate zum erstellen von Brokertravel
+Author: Matthias Gallee
+Author URI: none
+*/
+
+body{
+	color: #FFF; 
+	background: #2a3548;
+}
+#wrapper{
+	width: 850px; 
+	margin: auto; 
+	text-align: left; 
+	background: #2a3548;
+}
+#header{
+	height: 118px; 
+	margin-top:-7px;
+}
+#main{ 
+	float: left; 
+	background-color:#2a3548; 
+	color:#FFF;
+	width:850px;
+}
+#footer{
+	clear: both; 
+	height: 100px; 
+	padding: 20px; 
+	text-align:center;
+}
+
+/* Eigene Anpassung */
+#logo{
+	background-image:url(images/Bokertravel_logo.jpg);
+	height:118px;
+	width:195px;
+	margin-left:20px;
+}
+#bloglink{
+	text-decoration:none;
+	background-image:url(images/prag.jpg);
+	color:#FFF;
+	font-weight:normal;
+	width:850px;
+	height:350px;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+#blackbox{
+	background-color:#000;
+	opacity:0.7;
+	height:50px;
+}
+#category{
+	text-align:right;
+	margin-top:-18px;
+}
+
+/* Link Style */
+/* unvisited link */
+a:link {
+    color: #FFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+    color: #FFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #CCC;
+	text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    color: #FFF;
+	text-decoration:none;
+}
