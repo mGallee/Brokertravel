@@ -1,14 +1,42 @@
 <?php get_header(); ?>
-    <div id="main">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <a href="<?php the_permalink() ?>">
-                <div id="bloglink">
-                	<div id="blackbox">
-                		<h2><?php the_title(); ?></h2>
+    <div class="row">
+          <div class="col-xs-12 col-md-12">
+              <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <a href="<?php the_permalink() ?>">
+                    <div class="row entry">
+                         <div class="col-xs-12 col-md-12">
+                                <div class="row entrytitle">
+                                	<div class="col-xs-8 col-md-8">
+                                    	<div class="title"><?php the_title(); ?></div>
+                                        <div class="subtitle"> 
+                                        	<?php
+                                        		$subtitle = get_post_meta(get_the_ID(), 'Untertitel', true);
+                                            	if($subtitle != '')
+                                            	    echo  $subtitle ;  
+                                        	?>
+										</div>
+                                    </div>
+                                    <div class="col-xs-4 col-md-4">
+                                        <div class="price">
+											<?php
+                                            $price = get_post_meta(get_the_ID(), 'Preis', true);
+                                            if($price != '')
+                                                echo "<b>" . $price . "</b> &euro; pro Person ";                 
+                                            ?>
+                                        </div>
+                                        <div class="duration">
+											<?php
+                                                    $days = get_post_meta(get_the_ID(), 'Tage', true);
+                                                    if($days != '')
+                                                        echo  $days . " Tage";  
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
                     </div>
-            		<br />
-        		</div>
-            </a>
-        <?php endwhile; endif; ?>
+                </a>
+            <?php endwhile; endif; ?>
+          </div>
     </div>
 <?php get_footer(); ?>
