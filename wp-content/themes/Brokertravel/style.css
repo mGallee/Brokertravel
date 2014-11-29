@@ -7,6 +7,7 @@ Author: Matthias Gallee
 Author URI: none
 */
 
+/* Grid Anpassung */
 body{
 	background-image:url(images/bg_muster.jpg);
 	background-repeat:repeat;
@@ -31,10 +32,15 @@ body{
 	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
 	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
 }
-.maps{
-	margin-left:10px;
+#page{
+	margin-top: 10px;
 }
-.entry{
+.menubar{
+	margin-top:100px;
+	float:right;
+	text-align:right;
+}
+.entryheader{
 	text-decoration:none;
 	background-image:url(images/prag.jpg);
 	width:850px;
@@ -43,8 +49,7 @@ body{
 	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
 	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
 	margin-top:10px;
-	margin-left:0px;
-	margin-right:0px;
+
 }
 .entrytitle{
 	background-color:#000;
@@ -57,34 +62,52 @@ body{
 .entrycontent{
 	background-color:#FFF;
 	color:#000;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+	padding-top: 10px;
 }
-.menubar{
-	margin-top:100px;
-	float:right;
+.entrygallery{
+	background-color:#FFF;
+	color:#000;
+}
+.verticalrule{
+	border : 0;
+	height: 300px;
+	width : 1px;
+	background-image: -webkit-linear-gradient(top, #FFF, #000, #FFF);
+	background-image: -moz-linear-gradient(top, #FFF, #000, #FFF);
+	background-image: -ms-linear-gradient(top, #FFF, #000, #FFF);
+	background-image: -o-linear-gradient(top, #FFF, #000, #FFF);
+	background-image: linear-gradient(top, #FFF, #000, #FFF);
+}
+.horizontalrule{ 
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));       
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	width:100%;
+}
+.priceheader{
+	font-size:28px;
 	text-align:right;
-	/*border: solid #FFF 1px;*/
 }
-/* Link Style */
-a{
-	font-weight:bold;
-	text-decoration:none;
-	color:#FFF;
+.pricecontent{
+	font-size:25px;
+	text-align:left;
 }
-
-.opacity(@opacity) {
-  opacity: @opacity;
-  // IE8 filter
-  @opacity-ie: (@opacity * 100);
-  filter: ~"alpha(opacity=@{opacity-ie})";
-}
-.price{
-	font-size:26px;
-}
-.duration{
+.durationheader{
 	font-size:20px;
+	text-align:right;
+}
+.durationcontent{
+	font-size:18px;
+	text-align:lfet;
 }
 .title{
-	font-size:26px;
+	font-size:32px;
 	font-weight:bold;
 }
 .subtitle{
@@ -92,14 +115,27 @@ a{
 	font-style:italic;
 }
 .stars{
-	background-color:#000;
-	opacity:0.7;
+	font-size:28px;
+	text-align:right;
+	margin-top: 12px;
+}
+.surcharges{
+	font-size:12px;
+	text-align:left;
+}
+.available{
+	font-size:11px;
+	text-align:left;
+}
+button{
+	margin-top: 5px;
 }
 
-.center-block() {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Link Anpassung */
+a{
+	font-weight:bold;
+	text-decoration:none;
+	color:#FFF;
 }
 
 /* unvisited link */
@@ -113,6 +149,19 @@ a:hover {	text-decoration:none;}
 
 /* selected link */
 a:active {}
+
+/* Anderes */
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */

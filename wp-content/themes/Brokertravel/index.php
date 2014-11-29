@@ -1,9 +1,9 @@
 <?php get_header(); ?>
     <div class="row">
-          <div class="col-xs-12 col-md-12">
+    	<div class="col-xs-12 col-md-12">
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <a href="<?php the_permalink() ?>">
-                    <div class="row entry">
+                    <div class="row entryheader">
                          <div class="col-xs-12 col-md-12">
                                 <div class="row entrytitle">
                                 	<div class="col-xs-8 col-md-8">
@@ -17,21 +17,21 @@
 										</div>
                                     </div>
                                     <div class="col-xs-4 col-md-4">
-                                        <div class="price">
+                                        <div class="priceheader">
 											<?php
-                                            $price = get_post_meta(get_the_ID(), 'Preis', true);
-                                            if($price != '')
-                                                echo "<b>" . $price . "</b> &euro; pro Person ";                 
+												$price = get_post_meta(get_the_ID(), 'Preis', true);
+												if($price != '')
+													echo "<b>" . $price . "</b> &euro; pro Person ";                 
                                             ?>
                                         </div>
-                                        <div class="duration">
+                                        <div class="durationheader">
 											<?php
-                                                    $days = get_post_meta(get_the_ID(), 'Tage', true);
-                                                    if($days != '')
-                                                        echo  $days . " Tage";  
+												$days = get_post_meta(get_the_ID(), 'Tage', true);
+												if($days != '')
+													echo  $days . " Tage";  
                                             ?>
                                         </div>
-                                    </div>
+                                	</div>
                                 </div>
                           </div>
                     </div>

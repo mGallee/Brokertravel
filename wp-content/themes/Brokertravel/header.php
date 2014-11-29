@@ -30,9 +30,12 @@
 <body>
     <div class="container">
         <div class="row" >
-              	<div class="col-xs-6 col-md-4">
+              	<div class="col-xs-10 col-md-8">
                 		<a href="<?php bloginfo('url'); ?>"><div id="logo"></div></a>
                 </div>
-              	<div class="col-xs-6 col-md-4"></div>
-            	<div class="col-xs-6 col-md-4 menubar"><?php the_category('&nbsp;-&nbsp;') ?></div>
+            	<div class="col-xs-6 col-md-4 menubar">
+					<?php the_category('&nbsp;-&nbsp;') ?>
+                    <!-- http://codex.wordpress.org/Creating_Horizontal_Menus -->
+                </div>
          </div>
+         
