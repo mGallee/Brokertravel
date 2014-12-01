@@ -20,36 +20,38 @@ body{
 .footer{
 	width:850px;
 	text-align:center;
-	margin-top:10px;
 }
 
 /* Eigene Anpassung */
-#logo{
+
+/* Header */
+.logo{
 	background-image:url(images/Bokertravel_logo.jpg);
 	height:118px;
 	width:195px;
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-}
-#page{
-	margin-top: 10px;
 }
 .menubar{
-	margin-top:100px;
 	float:right;
 	text-align:right;
+	margin-top: -60px;
+	font-size:16px;
 }
+ul#categories{
+	list-style: none;
+}
+ul#categories li{
+	display: inline;
+	padding-left:5px;
+}
+.current-cat a{
+	font-weight:bold;
+}
+
+/* Content */
 .entryheader{
 	text-decoration:none;
-	background-image:url(images/prag.jpg);
 	width:850px;
 	height:350px;
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-	margin-top:10px;
-
 }
 .entrytitle{
 	background-color:#000;
@@ -62,10 +64,8 @@ body{
 .entrycontent{
 	background-color:#FFF;
 	color:#000;
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
-	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
 	padding-top: 10px;
+	min-height:375px;
 }
 .entrygallery{
 	background-color:#FFF;
@@ -90,12 +90,20 @@ body{
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 	width:100%;
 }
+.title{
+	font-size:32px;
+	font-weight:bold;
+}
+.subtitle{
+	font-size:22px;
+	font-style:italic;
+}
 .priceheader{
 	font-size:28px;
 	text-align:right;
 }
 .pricecontent{
-	font-size:25px;
+	font-size:23px;
 	text-align:left;
 }
 .durationheader{
@@ -105,14 +113,6 @@ body{
 .durationcontent{
 	font-size:18px;
 	text-align:lfet;
-}
-.title{
-	font-size:32px;
-	font-weight:bold;
-}
-.subtitle{
-	font-size:22px;
-	font-style:italic;
 }
 .stars{
 	font-size:28px;
@@ -127,30 +127,31 @@ body{
 	font-size:11px;
 	text-align:left;
 }
-button{
-	margin-top: 5px;
-}
+
+/* Footer */
+
 
 /* Link Anpassung */
 a{
-	font-weight:bold;
 	text-decoration:none;
 	color:#FFF;
 }
-
-/* unvisited link */
 a:link {}
-
-/* visited link */
 a:visited {}
-
-/* mouse over link */
-a:hover {	text-decoration:none;}
-
-/* selected link */
+a:hover {
+	text-decoration:none;
+}
 a:active {}
+.entrycontent a{
+	color:#2a6496;
+}
 
 /* Anderes */
+.boxshadow{
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+}
 .center-block() {
   display: block;
   margin-left: auto;
@@ -161,6 +162,28 @@ a:active {}
   // IE8 filter
   @opacity-ie: (@opacity * 100);
   filter: ~"alpha(opacity=@{opacity-ie})";
+}
+.error-template {
+	padding: 40px 15px;
+	text-align: center;
+	margin-top:20%;
+}
+.error-actions {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.error-actions .btn {
+	margin-right:10px;
+}
+#cntctfrm_contact_form{
+	text-align:center;
+}
+.form{
+	margin-left:100px;
+}
+button{
+	margin-top: 5px;
+	color:#FFF;
 }
 
 /* Extra small devices (phones, less than 768px) */
