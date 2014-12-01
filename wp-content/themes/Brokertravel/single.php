@@ -34,9 +34,11 @@
             </div>
             <div class="row entrycontent">
                 <div class="col-xs-9 col-md-9">
-                    <?php the_content(); ?>
-                    <!-- <hr class="verticalrule" /> -->
-                    <hr class="horizontalrule" />
+                	<div>
+                    	<?php the_content(); ?>
+                    	<hr class="horizontalrule" />
+                    </div>
+                    <div class="verticalrule"></div>
                 </div>
                 <div class="col-xs-3 col-md-3">
                     <div class="pricecontent">
@@ -54,9 +56,7 @@
                         ?>
                     </div>
                     <div>
-                        <?php
-                        	echo "<button type='button' class='btn btn-primary btn-lg btn-block' onclick='return request_travel(".'"'.get_page_link(96).'"'.")'>Zur Buchung &rsaquo;&rsaquo;</button>"
-						?>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" >Anfrage senden &rsaquo;&rsaquo;</button>
                     </div>
                     <div class="surcharges">
                         <br />
@@ -70,8 +70,9 @@
                         <br />
                         <?php
                             $validfrom = get_post_meta(get_the_ID(), 'gueltig_von', true);
+							echo "Gültig";
                             if($validfrom != '')
-                                echo  "Gültig von ".$validfrom;
+                                echo  " von ".$validfrom;
                             $validuntil = get_post_meta(get_the_ID(), 'gueltig_bis', true);
                             if($validuntil != '')
                                 echo  " bis ".$validuntil;
@@ -81,7 +82,7 @@
             </div>
             <div class="row entrygallery">
                 <div class="col-xs-12 col-md-12">
-                    TEST TEST<br /><br />
+                    <b>Da kommt noch die Gallerie rein!</b><br /><br />
                 </div>
             </div>
             <?php endwhile; endif; ?>

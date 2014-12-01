@@ -14,11 +14,11 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/css/bootstrap-theme.min.css">
     
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
-    
     <!-- jQuery Plugin -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
     
     <!-- My own Javascript -->
     <script type="text/javascript" src="wp-content/themes/Brokertravel/script.js"></script>
