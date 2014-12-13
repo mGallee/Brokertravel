@@ -24,7 +24,7 @@ define('DB_NAME', 'brokertravel');
 define('DB_USER', 'root');
 
 /** Ersetze password_here mit deinem MySQL-Passwort */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 
 /** Ersetze localhost mit der MySQL-Serveradresse */
 define('DB_HOST', 'localhost');
