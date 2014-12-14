@@ -56,7 +56,9 @@
                         ?>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block" >Anfrage senden &rsaquo;&rsaquo;</button>
+                    	<form action="<?php echo get_page_link(148,true); ?>" method="post">
+                        	<button type="submit" class="btn btn-primary btn-lg btn-block" >Anfrage senden &rsaquo;&rsaquo;</button>
+                        </form>
                     </div>
                     <div class="surcharges">
                         <br />
@@ -83,9 +85,6 @@
             <div class="row entrygallery">
                 <div class="col-xs-12 col-md-12">
                     <b>Da kommt noch die Gallerie rein!</b><br /><br />
-                    <a href="http://distilleryimage6.ak.instagram.com/ba70b8e8030011e3a31b22000a1fbb63_7.jpg" data-toggle="lightbox" data-title="A random title" data-footer="A custom footer text">
-                    	<img src="//distilleryimage6.ak.instagram.com/ba70b8e8030011e3a31b22000a1fbb63_7.jpg" class="img-responsive">
-                    </a>
                 </div>
             </div>
             <?php endwhile; endif; ?>

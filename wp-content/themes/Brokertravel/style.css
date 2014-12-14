@@ -136,6 +136,14 @@ ul#categories li{
 
 /* Footer */
 
+/* Formulare */
+button{
+	margin-top: 5px;
+	color:#FFF;
+}
+textarea{
+	resize:vertical;
+}
 
 /* Link Anpassung */
 a{
@@ -183,13 +191,6 @@ a:active {}
 }
 #cntctfrm_contact_form{
 	text-align:center;
-}
-.form{
-	margin-left:100px;
-}
-button{
-	margin-top: 5px;
-	color:#FFF;
 }
 
 /* Extra small devices (phones, less than 768px) */
