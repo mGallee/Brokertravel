@@ -56,8 +56,9 @@
                         ?>
                     </div>
                     <div>
-                    	<form action="<?php echo get_page_link(148,true); ?>" method="post">
+                    	<form action="<?php echo get_page_link(163); ?>" method="post">
                         	<button type="submit" class="btn btn-primary btn-lg btn-block" >Anfrage senden &rsaquo;&rsaquo;</button>
+                            <input type="hidden" name="postid" value="<?php $post->ID ?>" />
                         </form>
                     </div>
                     <div class="surcharges">
