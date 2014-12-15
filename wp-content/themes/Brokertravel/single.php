@@ -57,8 +57,8 @@
                     </div>
                     <div>
                     	<form action="<?php echo get_page_link(163); ?>" method="post">
+                        	<input type="hidden" name="blogID" value="<?php echo $post->ID ?>" />
                         	<button type="submit" class="btn btn-primary btn-lg btn-block" >Anfrage senden &rsaquo;&rsaquo;</button>
-                            <input type="hidden" name="postid" value="<?php $post->ID ?>" />
                         </form>
                     </div>
                     <div class="surcharges">
@@ -85,7 +85,9 @@
             </div>
             <div class="row entrygallery">
                 <div class="col-xs-12 col-md-12">
-                    <b>Da kommt noch die Gallerie rein!</b><br /><br />
+                	<div style="text-align:center">
+                    	<b>Gallerie in Arbeit!</b><br /><i>Dauert aber nicht mehr lange.</i><br /><br />
+                    </div>
                 </div>
             </div>
             <?php endwhile; endif; ?>
