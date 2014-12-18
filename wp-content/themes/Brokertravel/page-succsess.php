@@ -11,7 +11,7 @@
             
             $headers = array('Content-Type: text/html; charset=UTF-8');
             $pagelink = get_page_link($blogID);
-            $message =  "Eine Anfrage vom "." für ".$blogName."<br /><br />".
+            $message =  "Eine Anfrage vom ".date('d m Y')." für ".$blogName."<br /><br />".
                         
                         "<b>Name:</b> ".$givenname."<br />".
                         "<b>Vorname:</b> ".$surname."<br />".
@@ -20,7 +20,7 @@
                         
                         "<i>Link zum Angebot: <a href='".$pagelink."'>".$pagelink."</a></i>";
             
-            wp_mail("gallee.matthias@gmail.com", "Anfrage - ".$blogName, $message, $headers); 
+            wp_mail("vienna@brokertravel.at", "Anfrage - ".$blogName, $message, $headers); 
             ?>
            <div class="error-template">
                 <h1>Anfrage erfolgreich gesendet!</h1>                
