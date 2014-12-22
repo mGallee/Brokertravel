@@ -18,7 +18,6 @@ body{
 	.center-block();
 }
 .footer{
-	width:850px;
 	text-align:center;
 }
 
@@ -29,6 +28,8 @@ body{
 	background-image:url(images/Bokertravel_logo.jpg);
 	height:118px;
 	width:195px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
 }
 .menubar{
 	float:right;
@@ -50,7 +51,6 @@ ul#categories li{
 /* Content */
 .entryheader{
 	text-decoration:none;
-	width:850px;
 	height:350px;
 }
 .entrytitle{
@@ -207,7 +207,10 @@ a:active {}
 @media (min-width: @screen-sm-min) { }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {  }
+@media (min-width: @screen-md-min) {
+
+}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {  }
+@media (min-width: @screen-lg-min) { 
+ }
