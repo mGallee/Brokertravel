@@ -87,9 +87,16 @@
                 </div>
                 <div class="row entrygallery">
                     <div class="col-xs-12 col-md-12">
-                        <div style="text-align:center">
-                            <b>Gallerie in Arbeit!</b><br /><i>Dauert aber nicht mehr lange.</i><br /><br />
-                        </div>
+                            <?php
+                                $slideshowId = get_post_meta(get_the_ID(), 'DiashowID', true);
+                                if($slideshowId != ''){
+                                    do_action('slideshow_deploy', $slideshowId);
+                                }else{
+                                    echo "<div style='text-align:center'>";
+                                        echo "<i>Zu diesem Beitrag ist keine Gallerie vorhanden!</i><br />";
+                                    echo "</div>";
+                                }
+                            ?>
                     </div>
                 </div>
             </article>
