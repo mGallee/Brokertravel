@@ -2,12 +2,12 @@
     <div class="row boxshadow">
         <div class="col-xs-12 col-md-12">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); 
-				if (has_post_thumbnail()) {
-					$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 720,405 ), false, '' );
-				}
+					if (has_post_thumbnail()) {
+						$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 720,405 ), false, '' );
+					}
             ?>
             <article>
-                <div class="row entryheader" style="background:url(<?php echo $src[0]; ?>)">
+                <div class="row entryheader" style="background:url(<?php echo $src[0]; ?>) center">
                      <div class="col-xs-12 col-md-12">
                             <div class="row entrytitle">
                                 <div class="col-xs-8 col-md-8">
