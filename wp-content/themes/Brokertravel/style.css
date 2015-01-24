@@ -33,9 +33,9 @@ body{
 	border-bottom-left-radius: 6px;
 }
 .menubar{
-	float:right;
-	text-align:right;
-	margin-top: -60px;
+	/*float:right;
+	text-align:right;*/
+	padding-top: 60px;
 	font-size:16px;
 }
 ul#categories{
