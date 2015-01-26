@@ -13,17 +13,24 @@
                 <?php
                 $blogID = $_POST["blogID"];
                 $blogName = get_the_title($_POST["blogID"]);
+				$title = $_POST["title"];
+				$company = $_POST["company"];
                 $givenname = $_POST["givenname"];
                 $surname = $_POST["surname"];
                 $email = $_POST["email"];
+				$number = $_POST["number"];
                 $comment = nl2br($_POST["comment"]);
                 
                 $headers = array('Content-Type: text/html; charset=UTF-8');
                 $pagelink = get_page_link($blogID);
                 $message =  "Eine Anfrage vom ".date('d m Y')." für ".$blogName."<br /><br />".
-                            
+							
+							"<b>Anrede:</b> ".$title."<br />".
+							"<b>Firma:</b> ".$company."<br />".
                             "<b>Name:</b> ".$givenname."<br />".
                             "<b>Vorname:</b> ".$surname."<br />".
+							"<b>E-Mail:</b> ".$email."<br />".
+							"<b>Telefonnummer:</b> ".$number."<br />".
                             "<b>Anmerkung:</b>"."<br />".
                             $comment."<br /><br />".
                             

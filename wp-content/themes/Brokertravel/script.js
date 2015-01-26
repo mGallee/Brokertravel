@@ -29,3 +29,11 @@ var myLanguage = {
       groupCheckedTooManyStart : 'Please choose a maximum of ',
       groupCheckedEnd : ' item(s)'
 };
+
+function formchange(period){
+	if(period=="Firma"){
+		window.document.getElementById("changeonselect").style.display="block";
+	}else{
+		window.document.getElementById("changeonselect").style.display="none";
+	}
+}

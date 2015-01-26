@@ -16,7 +16,6 @@ body{
 .container{
 	/*min-width: 750px;*/
 	max-width: 970px;
-	.center-block();
 }
 .footer{
 	text-align:center;
@@ -25,18 +24,33 @@ body{
 /* Eigene Anpassung */
 
 /* Header */
+header{
+	background-image:url(images/luxusheader.jpg);
+	margin-left: -15px;
+	margin-right: -15px;
+}
+#twitterbootstrap .navbar .nav,
+#twitterbootstrap .navbar .nav > li
+{
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+
+#twitterbootstrap .navbar-inner {
+    text-align:center;
+}
+
 .logo{
 	background-image:url(images/Bokertravel_logo.jpg);
 	height:118px;
 	width:195px;
 	border-bottom-right-radius: 6px;
 	border-bottom-left-radius: 6px;
-}
-.menubar{
-	/*float:right;
-	text-align:right;*/
-	padding-top: 60px;
-	font-size:16px;
+	margin-left: 30px;
 }
 ul#categories{
 	list-style: none;
@@ -208,14 +222,13 @@ a:active {}
 /* Extra small devices (phones, less than 768px) */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { }
+@media (min-width: @screen-sm-min) {
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { 
  }
- 

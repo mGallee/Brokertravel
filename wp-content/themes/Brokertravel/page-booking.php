@@ -40,16 +40,18 @@
                     	<div class="form-group">
                         	<label for="title" class="col-sm-2 control-label">Anrede</label>
                        	  <div class="col-sm-2">
-                                <select class="form-control" name="title" required>
-                                	<option selected="selected">Herr</option>
-                                    <option>Frau</option>
-                                    <option>Firma</option>
+                                <select class="form-control" name="title" onchange="formchange(this.value)" required>
+                                	<option value="Herr" selected="selected">Herr</option>
+                                    <option value="Frau">Frau</option>
+                                    <option value="Firma">Firma</option>
                               </select> 
                         	</div>
-                            <label for="company" class="col-sm-2 control-label">Firmenname</label>
-                        	<div class="col-sm-6">
-                        		<input type="text" class="form-control" name="company" placeholder="Vorname" data-validation="custom" data-validation-regexp="^[A-Za-z]+$" required pattern="^[A-Za-z]+$">
-                        	</div>
+                            <div id="changeonselect" style="display:none">
+                            	<label for="company" class="col-sm-2 control-label">Firmenname</label>
+                        		<div class="col-sm-6">
+                        			<input type="text" class="form-control" name="company" placeholder="Firmenname" data-validation="custom" data-validation-regexp="^[A-Za-z]*$" pattern="^[A-Za-z]*$">
+                        		</div>
+                            </div>
                       	</div>
                     	<div class="form-group">
                         	<label for="givenname" class="col-sm-2 control-label">Vorname</label>
@@ -64,7 +66,7 @@
                       	<div class="form-group">
                         	<label for="email" class="col-sm-2 control-label">Email</label>
                        		<div class="col-sm-10">
-                        		<input type="email" class="form-control" name="email" placeholder="Email" data-validation="email" required>
+                        		<input type="email" class="form-control" name="email" placeholder="office@brokertravel.at" data-validation="email" required>
                        		</div>
                       	</div>
                       	<div class="form-group">
