@@ -15,10 +15,9 @@
             	</div>
           	</div>
             <br />
-            <div class="row" >
-            	
+            <div class="row">
             	<div class="col-xs-12 col-md-12">
-                    <nav class="navbar-inverse">
+                    <nav class="navbar navbar-inverse">
                       <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -42,7 +41,7 @@
                       </div><!-- /.container-fluid -->
                     </nav>
             	</div>
-          	</div>
+          	</div><!-- Row ende -->
           </header>
           <br />
          

@@ -18,7 +18,7 @@
                     </div>
                     <div class="error-actions">
                         <a href="<?php bloginfo('url'); ?>" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
-                            Zur Startseite </a><a href="<?php echo get_page_link(36); ?>" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span> Fehler melden </a>
+                            Zur Startseite </a><a href="<?php echo get_page_link(228); ?>" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span> Fehler melden </a>
                     </div>
                 </div>
             </div>
