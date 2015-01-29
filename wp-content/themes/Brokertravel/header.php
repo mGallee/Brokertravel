@@ -8,10 +8,19 @@
 
 <body>
     <div class="container">
-    	<header class="boxshadow">
+    	<?php 
+		$imagename = "home";
+		$categories = get_the_category(); 
+		$category_id = $categories[0]->cat_ID;
+		if($category_id)
+			$imagename = 'cat-item-'.$category_id;
+		else
+			$imagename = "home";
+		?>
+    	<header class="boxshadow" style="background-image:url(wp-content/themes/Brokertravel/images/<?php echo $imagename; ?>.jpg)">
         	<div class="row">
             	<div class="col-xs-12 col-md-12">
-                	<a href="<?php bloginfo('url'); ?>"><div class="logo boxshadow"></div></a>
+                		<a href="<?php bloginfo('url'); ?>"><div class="logo boxshadow"></div></a>
             	</div>
           	</div>
             <br />

@@ -7,15 +7,19 @@
 <link rel="shortcut icon" href="wp-content/themes/Brokertravel/images/favicon.png" type="image/png">
 <link rel="icon" href="wp-content/themes/Brokertravel/images/favicon.png" type="image/png">
 
+<!-- jQuery Plugin -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- ##Bootstrap## -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/css/bootstrap.min.css">
 
 <!-- Optional theme -->
 <!--<link rel="stylesheet" href="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/css/bootstrap-theme.min.css">-->
 
-<!-- My own CSS -->
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
 
 <!-- Google Analytics -->
 <script>
@@ -28,11 +32,9 @@
   ga('send', 'pageview');
 </script>
 
-<!-- jQuery Plugin -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
+<!-- My own CSS -->
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <!-- My own Javascript -->
 <script type="text/javascript" src="wp-content/themes/Brokertravel/script.js"></script>

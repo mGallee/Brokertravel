@@ -10,7 +10,7 @@
             <div class="row entryheader" style="background:url(<?php echo $src[0]; ?>) center">
                  <div class="col-xs-12 col-md-12">
                         <div class="row entrytitle">
-                            <div class="col-xs-8 col-md-8">
+                            <div class="col-xs-12 col-sm-8 col-md-8">
                                 <div class="title"><?php echo get_the_title($blogID); ?></div>
                                 <div class="subtitle"> 
                                     <?php
@@ -20,7 +20,7 @@
                                     ?>
                                 </div>
                             </div>
-                            <div class="col-xs-4 col-md-4">
+                            <div class="hidden-xs col-sm-4 col-md-4">
                                 <div class="stars">
                                     <?php
                                     $stars = get_post_meta($blogID, 'Sterne', true);

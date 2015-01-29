@@ -11,9 +11,9 @@
                     <div class="row entryheader boxshadow" style="background:url(<?php echo $src[0]; ?>) center">
                         <div class="col-xs-12 col-md-12">
                             <div class="row entrytitle">
-                                <div class="col-xs-7 col-md-8">
+                                <div class="col-xs-12 col-sm-8 col-md-8">
                                     <div class="title"><?php the_title(); ?></div>
-                                    <div class="subtitle"> 
+                                    <div class="subtitle">
                                         <?php
                                     		$subtitle = get_post_meta(get_the_ID(), 'Untertitel', true);
                                         	if($subtitle != '')
@@ -21,7 +21,7 @@
                                         ?>
 									</div>
                                 </div>
-                                <div class="col-xs-5 col-md-4">
+                                <div class="hidden-xs col-sm-4 col-md-4">
                                     <div class="priceheader">
 										<?php
 											$price = get_post_meta(get_the_ID(), 'Preis', true);
