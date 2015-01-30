@@ -42,9 +42,6 @@ $( document ).ready(function() {
     console.log("ready!");
 	$(".nav.navbar-nav li").on("mouseover", function(){
 		var imagename = $(this).attr("class").split(" ")[1];
-  		$("header").fadeOut(1000, function () {
-			$(this).css("background-image", "url(wp-content/themes/Brokertravel/images/"+imagename+".jpg)");
-			$(this).fadeIn(1000);
-  		});
+		$("header").css("background-image", "url(wp-content/themes/Brokertravel/images/"+imagename+".jpg)");
 	});
 });
