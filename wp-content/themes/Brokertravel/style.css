@@ -1,13 +1,14 @@
 @charset "utf-8";
 /*
 Theme Name: Brokertravel
-Theme URI: http://wordpress..de
+Theme URI: www.brokertravel.at
 Description: Tamplate zum erstellen von Brokertravel
 Author: Matthias Gallee
 Author URI: none
 */
 
 /* Grid Anpassung */
+
 body{
 	background-image:url(images/bg_muster.jpg);
 	background-repeat:repeat;
@@ -25,7 +26,7 @@ html, body {
   overflow-x: hidden !important;
 }
 
-/* Eigene Anpassung */
+/* Eigene Design Anpassung */
 
 /* Header */
 header{
@@ -58,6 +59,13 @@ ul#categories li{
 }
 
 /* Content */
+.entrycategory{
+	font-style:italic;
+	color:#FFF;
+	text-shadow: 1px 1px #000000;
+	font-size:17px;
+	margin-bottom:10px;
+}
 .entryheader{
 	text-decoration:none;
 	height:350px;
@@ -142,9 +150,6 @@ ul#categories li{
 .available{
 	font-size:11px;
 	text-align:left;
-}
-.wellcome{
-	text-align:center;
 }
 
 /* Footer */

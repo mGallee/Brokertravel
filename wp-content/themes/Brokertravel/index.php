@@ -1,4 +1,12 @@
 <?php get_header(); ?>
+	<div class="row entrycategory">
+    	<div class="hidden-xs col-sm-1 col-md-1"> 
+        	<span class="glyphicon glyphicon-info-sign" style="font-size:26px;"></span> 
+        </div>
+        <div class="col-xs-12 col-sm-11 col-md-11">
+        	<?php echo category_description(); ?>
+        </div>
+    </div>
     <div class="row">
     	<div class="col-xs-12 col-md-12">
             <?php if (have_posts()) : while (have_posts()) : the_post();
