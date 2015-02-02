@@ -72,11 +72,11 @@ ul#categories li{
 }
 .entrytitle{
 	background-color:#000;
-	opacity:0.7;
-	height:90px;
-	margin-top:260px;
+	opacity:0.8;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+	height:80px;
+	margin-top:270px;
 	color:#FFF;
-	padding-top:12px;
 }
 .entrycontent{
 	background-color:#FFF;
