@@ -41,8 +41,9 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           <ul class="nav navbar-nav">
 								<?php
-                                		$args = array('title_li'    => '',
-                                              'current_category'   => 0); 
+                                		$args = array('title_li'   => '',
+                                              'current_category'   => 0,
+											  'orderby'			   => 'id'); 
                                 		wp_list_categories($args); 
                             	?>
                           </ul>

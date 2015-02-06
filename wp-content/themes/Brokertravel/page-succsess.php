@@ -36,7 +36,7 @@
                             
                             "<i>Link zum Angebot: <a href='".$pagelink."'>".$pagelink."</a></i>";
                 
-                wp_mail("vienna@brokertravel.at", "Anfrage - ".$blogName, $message, $headers); 
+                wp_mail("office@brokertravel.at", "Anfrage - ".$blogName, $message, $headers); 
                 ?>
                <div class="error-template">
                     <h1>Anfrage erfolgreich gesendet!</h1><br />     
