@@ -33,6 +33,56 @@
                             </div>
                       </div>
                 </div>
+                
+                <!-- Only show mobile -->
+                <div class="visible-xs row entrycontent">
+                    <div class="col-xs-12">
+                        <div class="pricecontent">
+                            <?php
+                                $price = get_post_meta(get_the_ID(), 'Preis', true);
+                                if($price != '')
+                                    echo "<b>" . $price . "</b> &euro; pro Person ";                 
+                            ?>
+                        </div>
+                        <div class="durationcontent">
+                            <?php
+                                $days = get_post_meta(get_the_ID(), 'Tage', true);
+                                if($days != '')
+                                    echo  $days . " Tage " . ($days-1) . " Nächte";
+                            ?>
+                        </div>
+                        <br />
+                        <div>
+                            <form action="<?php echo get_page_link(163); ?>" method="post">
+                                <input type="hidden" name="blogID" value="<?php echo $post->ID ?>" />
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" >Anfrage senden &rsaquo;&rsaquo;</button>
+                            </form>
+                        </div>
+                        <div class="surcharges">
+                            <br />
+                            <?php
+                                $costs = get_post_meta(get_the_ID(), 'Zuschlaege', true);
+                                if($costs != '')
+                                    echo  $costs;
+                            ?>
+                        </div>
+                        <div class="available">
+                            <br />
+                            <?php
+                                $validfrom = get_post_meta(get_the_ID(), 'gueltig_von', true);
+                                echo "Gültig";
+                                if($validfrom != '')
+                                    echo  " von ".$validfrom;
+                                $validuntil = get_post_meta(get_the_ID(), 'gueltig_bis', true);
+                                if($validuntil != '')
+                                    echo  " bis ".$validuntil;
+                            ?>
+                        </div>
+                        <hr class="horizontalrule" />
+                    </div>
+                </div>
+                <!-- End only show on Mobile -->
+
                 <div class="row entrycontent">
                     <div class="col-xs-12 col-sm-8 col-md-9">
                         <div>
@@ -86,57 +136,7 @@
                             ?>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Only show mobile -->
-                <div class="visible-xs row entrycontent">
-                    <div class="col-xs-12">
-                        <div class="pricecontent">
-                            <?php
-                                $price = get_post_meta(get_the_ID(), 'Preis', true);
-                                if($price != '')
-                                    echo "<b>" . $price . "</b> &euro; pro Person ";                 
-                            ?>
-                        </div>
-                        <div class="durationcontent">
-                            <?php
-                                $days = get_post_meta(get_the_ID(), 'Tage', true);
-                                if($days != '')
-                                    echo  $days . " Tage " . ($days-1) . " Nächte";
-                            ?>
-                        </div>
-                        <br />
-                        <div>
-                            <form action="<?php echo get_page_link(163); ?>" method="post">
-                                <input type="hidden" name="blogID" value="<?php echo $post->ID ?>" />
-                                <button type="submit" class="btn btn-primary btn-lg btn-block" >Anfrage senden &rsaquo;&rsaquo;</button>
-                            </form>
-                        </div>
-                        <div class="surcharges">
-                            <br />
-                            <?php
-                                $costs = get_post_meta(get_the_ID(), 'Zuschlaege', true);
-                                if($costs != '')
-                                    echo  $costs;
-                            ?>
-                        </div>
-                        <div class="available">
-                            <br />
-                            <?php
-                                $validfrom = get_post_meta(get_the_ID(), 'gueltig_von', true);
-                                echo "Gültig";
-                                if($validfrom != '')
-                                    echo  " von ".$validfrom;
-                                $validuntil = get_post_meta(get_the_ID(), 'gueltig_bis', true);
-                                if($validuntil != '')
-                                    echo  " bis ".$validuntil;
-                            ?>
-                        </div>
-                        <hr class="horizontalrule" />
-                    </div>
-                </div>
-                <!-- End only show on Mobile -->
-                
+                </div>                
                 <div class="row entrygallery">
                     <div class="col-xs-12 col-md-12">
                             <?php
