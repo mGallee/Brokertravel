@@ -54,6 +54,9 @@ ul#categories li{
 	display: inline;
 	padding-left:5px;
 }
+.cat-item-7{
+	display:none !important;
+}
 .current-cat a{
 	font-weight:bold;
 }
