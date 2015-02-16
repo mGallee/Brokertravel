@@ -39,7 +39,8 @@ function formchange(period){
 }
 
 $( document ).ready(function() {
-    console.log("ready!");
+	$("input[class='wysija-submit wysija-submit-field']").addClass("btn btn-default");
+	
 	$(".nav.navbar-nav li").on("mouseover", function(){
 		var imagename = $(this).attr("class").split(" ")[1];
 		$("header").css("background-image", "url(wp-content/themes/Brokertravel/images/"+imagename+".jpg)");

@@ -139,16 +139,10 @@
                 </div>                
                 <div class="row entrygallery">
                     <div class="col-xs-12 col-md-12">
-                            <?php
-                                $slideshowId = get_post_meta(get_the_ID(), 'DiashowID', true);
-                                if($slideshowId != ''){
-                                    do_action('slideshow_deploy', $slideshowId);
-                                }else{
-                                    echo "<div style='text-align:center'>";
-                                        echo "<i>Zu diesem Beitrag ist keine Gallerie vorhanden!</i><br />";
-                                    echo "</div>";
-                                }
-                            ?>
+						<?php
+						get_images(get_the_ID());
+
+                        ?>
                     </div>
                 </div>
             </article>

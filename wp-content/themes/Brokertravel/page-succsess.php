@@ -35,8 +35,18 @@
                             $comment."<br /><br />".
                             
                             "<i>Link zum Angebot: <a href='".$pagelink."'>".$pagelink."</a></i>";
+				
+				$automessage =  "Sehr geehte Damen und Herren<br /><br />".
+								
+								"Danke das Sie bei uns gebucht haben. Wir werden Ihre Buchungsanfrage so schnell wie nur möglich bearbeiten und melden uns in bis zu 24 Stunden bei Ihnen.<br /><br />".
+								"Dies ist eine automatisch generierte Nachricht, bitte antworten Sie auf diese nicht!<br /><br />".
+								
+								"Mit freundlichen Grüßen<br />".
+								"Franz Vtelensky";
                 
-                wp_mail("office@brokertravel.at", "Anfrage - ".$blogName, $message, $headers); 
+                wp_mail("office@brokertravel.at", "Anfrage - ".$blogName, $message, $headers);
+				
+				wp_mail($email, "Bestätigung für Buchungsanfrage", $automessage, $headers);
                 ?>
                <div class="error-template">
                     <h1>Anfrage erfolgreich gesendet!</h1><br />     

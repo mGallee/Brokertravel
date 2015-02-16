@@ -23,6 +23,10 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
 
+<!-- Lightbox -->
+<script src="wp-content/themes/Brokertravel/lightbox/js/lightbox.min.js"></script>
+<link href="wp-content/themes/Brokertravel/lightbox/css/lightbox.css" rel="stylesheet" />
+
 <!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
