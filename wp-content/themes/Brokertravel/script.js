@@ -39,10 +39,18 @@ function formchange(period){
 }
 
 $( document ).ready(function() {
-	$("input[class='wysija-submit wysija-submit-field']").addClass("btn btn-default");
+	$("input[class='wysija-submit wysija-submit-field']").addClass("btn btn-primary");
 	
 	$(".nav.navbar-nav li").on("mouseover", function(){
 		var imagename = $(this).attr("class").split(" ")[1];
-		$("header").css("background-image", "url(wp-content/themes/Brokertravel/images/"+imagename+".jpg)");
+		$("header").css("background-image", "url(wp-content/themes/Brokertravel/images/"+imagename+".png)");
 	});
+	$(".logo-container")
+    .mouseenter(function() {
+          $( this ).animate({height: "+=20"}, 200);
+    })
+    .mouseleave(function() {
+        $( this ).animate({ height: "-=20"}, 200);
+     });
 });
+

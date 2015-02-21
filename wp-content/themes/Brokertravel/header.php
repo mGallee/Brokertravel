@@ -17,13 +17,16 @@
 		else
 			$imagename = "home";
 		?>
-    	<header class="boxshadow" style="background-image:url(wp-content/themes/Brokertravel/images/<?php echo $imagename; ?>.jpg)">
+    	<header class="boxshadow" style="background-image:url(wp-content/themes/Brokertravel/images/<?php echo $imagename; ?>.png)">
         	<div class="row">
             	<div class="col-xs-12 col-md-12">
-                		<a href="<?php bloginfo('url'); ?>"><div class="logo boxshadow"></div></a>
-            	</div>
+                	<div class="header-container">
+                		<div class="logo-container boxshadow"><a href="<?php bloginfo('url'); ?>"><div class="logo"></div></a>
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> +43 2243 32888<br />
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> office@brokertravel.at</div>
+            		</div>
+                </div>
           	</div>
-            <br />
             <div class="row">
             	<div class="col-xs-12 col-md-12">
                     <nav class="navbar navbar-inverse">

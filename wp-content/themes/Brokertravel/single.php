@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-md-12">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); 
 					if (has_post_thumbnail()) {
-						$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),full , false, '' );
+						$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),full , false);
 					}
             ?>
             <article>
@@ -136,13 +136,10 @@
                             ?>
                         </div>
                     </div>
-                </div>                
+                </div>               
                 <div class="row entrygallery">
                     <div class="col-xs-12 col-md-12">
-						<?php
-						get_images(get_the_ID());
-
-                        ?>
+						<?php get_images(get_the_ID()); ?>
                     </div>
                 </div>
             </article>

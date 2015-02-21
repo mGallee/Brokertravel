@@ -1,0 +1,272 @@
+@charset "utf-8";
+/*
+Theme Name: Brokertravel
+Theme URI: www.brokertravel.at
+Description: Tamplate zum erstellen von Brokertravel
+Author: Matthias Gallee
+Author URI: none
+*/
+
+/* Grid Anpassung */
+
+body{
+	background-image:url(images/bg_muster.jpg);
+	background-repeat:repeat;
+	color:#FFF;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	max-width: 970px;
+}
+.footer{
+	text-align:center;
+}
+/* Remove Scrollbar spacer */
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* Eigene Design Anpassung */
+
+/* Header */
+header{
+	background-position:top;
+	margin-left: -15px;
+	margin-right: -15px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.navbar{
+	margin-top:50px;
+	margin-bottom:0px;
+	font-size:15px;
+}
+.logo{
+	background-image:url(images/Brokertravel_logo.png);
+	height:118px;
+	width:195px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-left: 30px;
+}
+.infobox{
+	background: rgba(256, 256, 256, .8);
+	color:#333;
+	text-align:center;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 6px;
+	margin-right:30px;
+	font-size:15px;
+}
+ul#categories{
+	list-style: none;
+}
+ul#categories li{
+	display: inline;
+	padding-left:5px;
+}
+.cat-item-7{
+	display:none !important;
+}
+.current-cat a{
+	font-weight:bold;
+}
+
+/* Slider */
+.slider{
+	padding-left:0px;
+	padding-right:0px;
+}
+.carousel-caption{
+	background: rgb(0, 0, 0); /* The Fallback */
+	background: rgba(0, 0, 0, .7);
+	filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+/* Content */
+.entrycategory{
+	font-style:italic;
+	color:#FFF;
+	text-shadow: 1px 1px #000000;
+	font-size:17px;
+	margin-bottom:10px;
+}
+.entryheader{
+	text-decoration:none;
+	height:350px;
+}
+.entrytitle{
+	background: rgb(0, 0, 0); /* The Fallback */
+	background: rgba(0, 0, 0, .8);
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+	height:80px;
+	margin-top:270px;
+	color:#FFF;
+}
+.entrycontent{
+	background-color:#FFF;
+	color:#000;
+	padding-top: 10px;
+}
+.entrygallery{
+	background-color:#FFF;
+	color:#000;
+    padding-bottom:13px;
+}
+.verticalrule{
+	width:1px;
+	height:100%;
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:10;
+	background: rgba(0,0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(50%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+.horizontalrule{ 
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));       
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	width:100%;
+}
+.title{
+	font-size:32px;
+	font-weight:bold;
+}
+.subtitle{
+	font-size:22px;
+	font-style:italic;
+}
+.priceheader{
+	font-size:28px;
+	text-align:right;
+}
+.pricecontent{
+	font-size:23px;
+	text-align:left;
+}
+.durationheader{
+	font-size:20px;
+	text-align:right;
+}
+.durationcontent{
+	font-size:18px;
+	text-align:lfet;
+}
+.stars{
+	font-size:28px;
+	text-align:right;
+	margin-top: 12px;
+}
+.surcharges{
+	font-size:12px;
+	text-align:left;
+}
+.available{
+	font-size:11px;
+	text-align:left;
+}
+
+/* Footer */
+
+/* Formulare */
+button{
+	margin-top: 5px;
+	color:#FFF;
+}
+textarea{
+	resize:vertical;
+}
+:required{
+  border-color: #88a;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+}
+/* Link Anpassung */
+a{
+	text-decoration:none;
+	color:#FFF;
+}
+a:link {}
+a:visited {}
+a:hover {
+	text-decoration:none;
+}
+a:active {}
+.entrycontent a{
+	color:#2a6496;
+}
+
+/* Anderes */
+.boxshadow{
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.65);
+}
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+.error-template {
+	padding: 40px 15px;
+	text-align: center;
+	margin-top:20%;
+}
+.error-actions {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.error-actions .btn {
+	margin-right:10px;
+}
+#cntctfrm_contact_form{
+	text-align:center;
+}
+
+/* Extra small devices (phones, less than 768px) */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
+ }
+
+/* On Normal Desktop Size, Navbar is center! */
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
