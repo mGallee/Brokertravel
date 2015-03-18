@@ -7,11 +7,14 @@
 </head>
 
 <body>
+<!-- Google Analytics -->
+<?php include_once("analyticstracking.php") ?>
+
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="error-template">
-                    <h1> Uups!</h1>
+                    <h1>Uups!</h1>
                     <h2>404 Not Found</h2>
                     <div class="error-details">
                         Ein Fehler ist aufgetreten: Seite wurde nicht gefunden!

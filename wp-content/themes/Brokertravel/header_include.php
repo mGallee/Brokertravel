@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<!--<link rel="stylesheet" href="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="wp-content/themes/Brokertravel/bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
@@ -39,6 +39,7 @@
 
   ga('create', 'UA-57923924-1', 'auto');
   ga('send', 'pageview');
+
 </script>
 
 <!-- My own CSS -->
